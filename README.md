@@ -118,13 +118,31 @@ client.post("/1.1/statuses/update.json", { "status" => "The world is your oyster
 
 ## Streaming
 
-```crystal
-client = Twitter::Streaming::Client.new(consumer_key, consumer_secret, access_token, access_token_secret)
+### Configuration works just like `Twitter::REST::Client`
 
-# This will block the thread
-# The block will be yielded each time a new tweet (or delete) received
-@client.sample do |content|
-  p content
+```crystal
+client = Twitter::Streaming::Client.new do |config|
+  config.consumer_key        = "YOUR_CONSUMER_KEY"
+  config.consumer_secret     = "YOUR_CONSUMER_SECRET"
+  config.access_token        = "YOUR_ACCESS_TOKEN"
+  config.access_token_secret = "YOUR_ACCESS_SECRET"
+end
+```
+
+### Stream a random sample of all tweets
+
+```crystal
+client.sample do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+```
+
+### Stream mentions of coffee or tea
+
+```crystal
+topics = ["coffee", "tea"]
+client.filter({"track" => topics.join(",")}) do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
 end
 ```
 
