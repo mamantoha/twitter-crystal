@@ -15,7 +15,7 @@ Add this to your application's `shard.yml`:
 dependencies:
   twitter-crystal:
     github: sferik/twitter-crystal
-    version: ~> 0.2.0
+    version: ~> 0.2.1
 ```
 
 In your terminal run:
@@ -54,6 +54,12 @@ client.update("Good morning")
 
 # delete a tweet
 client.destroy_status(897099923128172545)
+```
+
+**Fetch a particular Tweet by ID**
+
+```crystal
+client.status(950491199454044162)
 ```
 
 **Follow a user(by screen name or user_id)**
