@@ -37,6 +37,18 @@ module Twitter
         JSON.parse(response)["ids"].as_a.map(&.as_i64)
       end
 
+      def friend_ids(screen_name : String, options = {} of String => String) : Array(Int64)
+        friend_ids(options.merge({"screen_name" => screen_name}))
+      end
+
+      def friend_ids(user_id : Int32 | Int64, options = {} of String => String) : Array(Int64)
+        friend_ids(options.merge({"user_id" => user_id.to_s}))
+      end
+
+      def friend_ids(user : Twitter::User, options = {} of String => String) : Array(Int64)
+        friend_ids(user.id, options)
+      end
+
       def friends(options = {} of String => String) : Array(Twitter::User)
         response = get("/1.1/friends/list.json", options)
         Array(Twitter::User).from_json(JSON.parse(response)["users"].to_json)
@@ -50,13 +62,25 @@ module Twitter
         friends(options.merge({"user_id" => user_id.to_s}))
       end
 
-      def friends(user : Twitter::User | Int64, options = {} of String => String) : Array(Twitter::User)
+      def friends(user : Twitter::User, options = {} of String => String) : Array(Twitter::User)
         friends(user.id, options)
       end
 
       def follower_ids(options = {} of String => String) : Array(Int64)
         response = get("/1.1/followers/ids.json", options)
         JSON.parse(response)["ids"].as_a.map(&.as_i64)
+      end
+
+      def follower_ids(screen_name : String, options = {} of String => String) : Array(Int64)
+        follower_ids(options.merge({"screen_name" => screen_name}))
+      end
+
+      def follower_ids(user_id : Int32 | Int64, options = {} of String => String) : Array(Int64)
+        follower_ids(options.merge({"user_id" => user_id.to_s}))
+      end
+
+      def follower_ids(user : Twitter::User, options = {} of String => String) : Array(Int64)
+        follower_ids(user.id, options)
       end
 
       def followers(options = {} of String => String) : Array(Twitter::User)
