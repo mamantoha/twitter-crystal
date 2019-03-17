@@ -2,6 +2,7 @@
 # twitter-crystal
 
 [![Build Status](https://travis-ci.org/mamantoha/twitter-crystal.svg?branch=develop)](https://travis-ci.org/mamantoha/twitter-crystal)
+[![License](https://img.shields.io/github/license/mamantoha/twitter-crystal.svg)](https://github.com/mamantoha/twitter-crystal/blob/develop/LICENSE.md)
 
 A library to access the Twitter API using Crystal
 
@@ -131,7 +132,7 @@ If you want to call the API directly, refer to the [API reference](https://dev.t
 4. Push to the branch (git push origin my-new-feature)
 5. Create a new Pull Request
 
-### Pull Requests are very welcome!
+### Pull Requests are very welcome
 
 The goal of the project is to implement all methods to call [Twitter REST API](https://dev.twitter.com/rest/public). There are a lot of things need to be done. Pull Requests are welcome :)
 
@@ -139,3 +140,5 @@ The goal of the project is to implement all methods to call [Twitter REST API](h
 
 - [sferik](https://github.com/sferik) Erik Michaels-Ober - creator
 - [kenta-s](https://github.com/kenta-s) Kenta Shirai - maintainer
+- [mamantoha](https://github.com/mamantoha) Anton Maminov - maintainer
+- [vladfaust](https://github.com/vladfaust) Vlad Faust - Streaming API support
