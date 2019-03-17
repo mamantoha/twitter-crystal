@@ -121,12 +121,12 @@ client.post("/1.1/statuses/update.json", { "status" => "The world is your oyster
 ### Configuration works just like `Twitter::REST::Client`
 
 ```crystal
-client = Twitter::Streaming::Client.new do |config|
-  config.consumer_key        = "YOUR_CONSUMER_KEY"
-  config.consumer_secret     = "YOUR_CONSUMER_SECRET"
-  config.access_token        = "YOUR_ACCESS_TOKEN"
-  config.access_token_secret = "YOUR_ACCESS_SECRET"
-end
+consumer_key        = "your consumer key"
+consumer_secret     = "your consumer secret"
+access_token        = "your access token"
+access_token_secret = "your access token secret "
+
+client = Twitter::Streaming::Client.new(consumer_key, consumer_secret, access_token, access_token_secret)
 ```
 
 ### Stream a random sample of all tweets
