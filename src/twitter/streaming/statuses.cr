@@ -40,7 +40,7 @@ module Twitter
 
       def parse_result(json)
         (return Twitter::Tweet.from_json(json)) rescue nil
-        (return Twitter::Delete.from_json(json, root: "delete")) rescue nil
+        (Twitter::Delete.from_json(json, root: "delete")) rescue nil
       end
     end
   end

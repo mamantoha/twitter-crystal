@@ -1,4 +1,13 @@
-.crystal/
-.deps/
-.deps.lock
-libs/
+/doc/
+/lib/
+/bin/
+/.shards/
+/.idea/
+/tmp/
+/samples/
+/docs/
+/.vscode
+
+# Libraries don't need dependency lock
+# Dependencies will be locked in application that uses them
+/shard.lock
