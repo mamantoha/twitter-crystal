@@ -8,7 +8,7 @@
 
 A library to access the Twitter API using Crystal
 
-> This is a fork of [twitter-crystal](https://github.com/sferik/twitter-crystal) which was originally written by Erik Berlin.
+> This is a fork of [twitter-crystal](https://github.com/sferik/twitter-crystal) which was originally written by Erik Michaels-Ober.
 >
 > It looks like original repository is no longer actively maintained and does not work with the latest Crystal version.
 
@@ -18,7 +18,7 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  nanoid:
+  twitter-crystal:
     github: mamantoha/twitter-crystal
 ```
 
