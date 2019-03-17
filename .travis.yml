@@ -5,3 +5,13 @@ script:
   - crystal spec
   - crystal tool format --check
   - bin/ameba
+  - crystal docs
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  project_name: twitter-crystal
+  local_dir: docs
+  on:
+    branch: master
