@@ -17,7 +17,7 @@ module Twitter
       property user_agent : String?
 
       def initialize(@consumer_key, @consumer_secret, @access_token, @access_token_secret, @user_agent = nil)
-        @user_agent ||= "CrystalTwitterClient/#{Twitter::Version.to_s}"
+        @user_agent ||= "CrystalTwitterClient/#{Twitter::VERSION}"
         consumer = OAuth::Consumer.new(HOST, consumer_key, consumer_secret)
         access_token = OAuth::AccessToken.new(access_token, access_token_secret)
         @http_client = HTTP::Client.new(HOST, tls: true)

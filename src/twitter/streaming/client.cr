@@ -18,7 +18,7 @@ module Twitter
       property http_client : HTTP::Client
 
       def initialize(@consumer_key, @consumer_secret, @access_token, @access_token_secret, @user_agent = nil, connect_timeout : Time::Span? = 30.seconds)
-        @user_agent ||= "CrystalTwitterClient/#{Twitter::Version.to_s}"
+        @user_agent ||= "CrystalTwitterClient/#{Twitter::VERSION}"
         consumer = OAuth::Consumer.new(HOST, consumer_key, consumer_secret)
         access_token = OAuth::AccessToken.new(access_token, access_token_secret)
         @http_client = HTTP::Client.new(HOST, tls: true)

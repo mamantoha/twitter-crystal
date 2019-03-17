@@ -4,7 +4,7 @@ version: 0.2.1
 authors:
   - Erik Michaels-Ober <sferik@gmail.com>
 
-crystal: 0.27.0
+crystal: 0.27.2
 
 development_dependencies:
   ameba:

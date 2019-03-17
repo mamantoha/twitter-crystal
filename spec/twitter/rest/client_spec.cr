@@ -12,7 +12,7 @@ describe Twitter::REST::Client do
     end
     it "sets default User-Agent when it is omitted" do
       client = Twitter::REST::Client.new("CK", "CS", "AT", "AS")
-      client.user_agent.should eq("CrystalTwitterClient/#{Twitter::Version.to_s}")
+      client.user_agent.should eq("CrystalTwitterClient/#{Twitter::VERSION}")
     end
   end
 
