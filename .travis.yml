@@ -1,1 +1,7 @@
 language: crystal
+dist: xenial
+
+script:
+  - crystal spec
+  - crystal tool format --check
+  - bin/ameba

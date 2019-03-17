@@ -3,6 +3,15 @@ require "../cursor"
 module Twitter
   module REST
     module Users
+      def settings(options = {} of String => String)
+        response = if options.size.zero?
+                     get("/1.1/account/settings.json")
+                   else
+                     post("/1.1/account/settings.json", options)
+                   end
+        Twitter::Settings.from_json(response)
+      end
+
       def user(options = {} of String => String) : Twitter::User
         response = get("/1.1/account/verify_credentials.json", options)
         Twitter::User.from_json(response)
@@ -40,7 +49,7 @@ module Twitter
 
       def blocked_ids(options = {} of String => String) : Array(Int64)
         response = get("/1.1/blocks/ids.json", options)
-        JSON.parse(response)["ids"].map { |id| id.as_i64 }
+        JSON.parse(response)["ids"].as_a.map(&.as_i64)
       end
 
       def block?(user_id : Int32 | Int64, options = {} of String => String) : Bool
@@ -99,7 +108,7 @@ module Twitter
       end
 
       def update_profile_banner(base64_string : String, options = {} of String => String) : Void
-        response = post("/1.1/account/update_profile_banner.json", options.merge({"banner" => base64_string}))
+        post("/1.1/account/update_profile_banner.json", options.merge({"banner" => base64_string}))
         Void # this API returns an empty body, so this method returns nothing
       end
 
