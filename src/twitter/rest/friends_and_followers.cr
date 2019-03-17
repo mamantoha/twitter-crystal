@@ -37,14 +37,21 @@ module Twitter
         JSON.parse(response)["ids"].as_a.map(&.as_i64)
       end
 
-      def friends(screen_name : String, options = {} of String => String) : Array(Twitter::User)
-        response = get("/1.1/friends/list.json", options.merge({"screen_name" => screen_name}))
+      def friends(options = {} of String => String) : Array(Twitter::User)
+        response = get("/1.1/friends/list.json", options)
         Array(Twitter::User).from_json(JSON.parse(response)["users"].to_json)
       end
 
+      def friends(screen_name : String, options = {} of String => String) : Array(Twitter::User)
+        friends(options.merge({"screen_name" => screen_name}))
+      end
+
       def friends(user_id : Int32 | Int64, options = {} of String => String) : Array(Twitter::User)
-        response = get("/1.1/friends/list.json", options.merge({"user_id" => user_id.to_s}))
-        Array(Twitter::User).from_json(JSON.parse(response)["users"].to_json)
+        friends(options.merge({"user_id" => user_id.to_s}))
+      end
+
+      def friends(user : Twitter::User | Int64, options = {} of String => String) : Array(Twitter::User)
+        friends(user.id, options)
       end
 
       def follower_ids(options = {} of String => String) : Array(Int64)
@@ -52,14 +59,21 @@ module Twitter
         JSON.parse(response)["ids"].as_a.map(&.as_i64)
       end
 
-      def followers(screen_name : String, options = {} of String => String) : Array(Twitter::User)
-        response = get("/1.1/followers/list.json", options.merge({"screen_name" => screen_name}))
+      def followers(options = {} of String => String) : Array(Twitter::User)
+        response = get("/1.1/followers/list.json", options)
         Array(Twitter::User).from_json(JSON.parse(response)["users"].to_json)
       end
 
+      def followers(screen_name : String, options = {} of String => String) : Array(Twitter::User)
+        followers(options.merge({"screen_name" => screen_name}))
+      end
+
       def followers(user_id : Int32 | Int64, options = {} of String => String) : Array(Twitter::User)
-        response = get("/1.1/followers/list.json", options.merge({"user_id" => user_id.to_s}))
-        Array(Twitter::User).from_json(JSON.parse(response)["users"].to_json)
+        followers(options.merge({"user_id" => user_id.to_s}))
+      end
+
+      def followers(user : Twitter::User, options = {} of String => String) : Array(Twitter::User)
+        followers(user.id, options)
       end
     end
   end
