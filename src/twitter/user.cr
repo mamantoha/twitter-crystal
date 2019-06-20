@@ -16,7 +16,7 @@ module Twitter
       id:                                 Int64,
       is_translation_enabled:             Bool?,
       is_translator:                      Bool,
-      lang:                               String,
+      lang:                               String?,
       listed_count:                       Int32,
       location:                           String?,
       name:                               String,
