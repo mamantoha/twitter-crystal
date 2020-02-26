@@ -45,7 +45,9 @@
             }
           ]
         },
-        "description": null
+        "description": {
+          "urls": []
+        }
       },
       "default_profile": false,
       "url": "http://bit.ly/oauth-dancer",

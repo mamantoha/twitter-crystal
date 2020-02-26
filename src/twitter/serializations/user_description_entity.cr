@@ -4,6 +4,6 @@ module Twitter
   class UserDescriptionEntity
     include JSON::Serializable
 
-    property urls : Array(UrlEntity)?
+    property urls : Array(UrlEntity?)
   end
 end
