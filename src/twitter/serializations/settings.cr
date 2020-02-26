@@ -51,28 +51,4 @@ module Twitter
 
     property tzinfo_name : String
   end
-
-  class SleepTime
-    include JSON::Serializable
-
-    property enabled : Bool
-
-    property end_time : String?
-
-    property start_time : String?
-
-    def initialize
-      @enabled = false
-    end
-  end
-
-  class TimeZone
-    include JSON::Serializable
-
-    property name : String?
-
-    property utc_offset : Int32?
-
-    property tzinfo_name : String?
-  end
 end
