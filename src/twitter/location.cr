@@ -2,20 +2,33 @@ require "json"
 
 module Twitter
   class Location
-    JSON.mapping({
-      id:               String,
-      url:              String,
-      place_type:       String,
-      name:             String,
-      full_name:        String,
-      country_code:     String,
-      country:          String,
-      contained_within: Array(String),
-      bounding_box:     BoundingBox?,
-      attributes:       Hash(String, String),
-      geometry:         BoundingBox?,
-      polylines:        Array(String)?,
-    })
+    include JSON::Serializable
+
+    property id : String
+
+    property url : String
+
+    property place_type : String
+
+    property name : String
+
+    property full_name : String
+
+    property country_code : String
+
+    property country : String
+
+    property contained_within : Array(Location)
+
+    property geometry : BoundingBox?
+
+    property polylines : Array(String)?
+
+    property centroid : Array(Float64)?
+
+    property bounding_box : BoundingBox?
+
+    property attributes : Hash(String, String)
 
     def_equals id
   end
