@@ -2,14 +2,20 @@ require "json"
 
 module Twitter
   class Place
-    JSON.mapping({
-      id:           String,
-      url:          String,
-      place_type:   String,
-      name:         String,
-      full_name:    String,
-      country_code: String,
-      country:      String,
-    })
+    include JSON::Serializable
+
+    property id : String
+
+    property url : String
+
+    property place_type : String
+
+    property name : String
+
+    property full_name : String
+
+    property country_code : String
+
+    property country : String
   end
 end
