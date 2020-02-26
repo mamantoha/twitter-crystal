@@ -3,8 +3,7 @@ module Twitter
     module Favorites
       # Favorites (likes) the `Tweet` specified in the *id* parameter as the authenticating user.
       # Returns the favorite `Tweet` when successful.
-      def like(status_id : Int64) : Twitter::Tweet
-        Twitter::Tweet
+      def like(id : Int64) : Twitter::Tweet
         response = post("/1.1/favorites/create.json", {"id" => id.to_s})
         Twitter::Tweet.from_json(response)
       end
