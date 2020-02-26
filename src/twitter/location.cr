@@ -18,7 +18,7 @@ module Twitter
 
     property country : String
 
-    property contained_within : Array(Location)
+    property contained_within : Array(Location)?
 
     property geometry : BoundingBox?
 
