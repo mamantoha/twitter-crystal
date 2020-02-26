@@ -5,24 +5,15 @@
   "truncated": false,
   "id_str": "243145735212777472",
   "entities": {
-    "urls": [
-
-    ],
+    "urls": [],
     "hashtags": [
       {
         "text": "peterfalk",
-        "indices": [
-          35,
-          45
-        ]
+        "indices": [35, 45]
       }
     ],
-    "user_mentions": [
-
-    ],
-    "symbols": [
-
-    ]
+    "user_mentions": [],
+    "symbols": []
   },
   "in_reply_to_user_id_str": null,
   "text": "Maybe he'll finally find his keys. #peterfalk",
@@ -52,18 +43,13 @@
           {
             "expanded_url": "http://www.jason-costa.blogspot.com/",
             "url": "http://t.co/YCA3ZKY",
-            "indices": [
-              0,
-              19
-            ],
+            "indices": [0, 19],
             "display_url": "jason-costa.blogspot.com"
           }
         ]
       },
       "description": {
-        "urls": [
-
-        ]
+        "urls": []
       }
     },
     "default_profile": false,

@@ -9,20 +9,13 @@
       {
         "expanded_url": "http://venturebeat.com/2012/08/29/vimeo-dropbox/#.UD5JLsYptSs.twitter",
         "url": "http://t.co/7UlkvZzM",
-        "indices": [
-          69,
-          89
-        ],
+        "indices": [69, 89],
         "display_url": "venturebeat.com/2012/08/29/vim\u2026"
       }
     ],
-    "hashtags": [
-
-    ],
+    "hashtags": [],
     "symbols": [],
-    "user_mentions": [
-
-    ]
+    "user_mentions": []
   },
   "in_reply_to_user_id_str": null,
   "text": "\"Vimeo integrates with Dropbox for easier video uploads and shares\": http://t.co/7UlkvZzM",
@@ -46,27 +39,14 @@
       "type": "Polygon",
       "coordinates": [
         [
-          [
-            -105.14544,
-            40.192138
-          ],
-          [
-            -105.14544,
-            40.192138
-          ],
-          [
-            -105.14544,
-            40.192138
-          ],
-          [
-            -105.14544,
-            40.192138
-          ]
+          [-105.14544, 40.192138],
+          [-105.14544, 40.192138],
+          [-105.14544, 40.192138],
+          [-105.14544, 40.192138]
         ]
       ]
     },
-    "attributes": {
-    }
+    "attributes": {}
   },
 
   "user": {
@@ -87,18 +67,13 @@
           {
             "expanded_url": "http://www.jason-costa.blogspot.com/",
             "url": "http://t.co/YCA3ZKY",
-            "indices": [
-              0,
-              19
-            ],
+            "indices": [0, 19],
             "display_url": "jason-costa.blogspot.com"
           }
         ]
       },
       "description": {
-        "urls": [
-
-        ]
+        "urls": []
       }
     },
     "default_profile": false,

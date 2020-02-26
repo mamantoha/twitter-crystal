@@ -6,18 +6,10 @@
     "created_at": "Fri Oct 19 15:51:49 +0000 2012",
     "id_str": "259320959964680192",
     "entities": {
-      "urls": [
-
-      ],
-      "hashtags": [
-
-      ],
-      "symbols":[
-
-      ],
-      "user_mentions": [
-
-      ]
+      "urls": [],
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": []
     },
     "in_reply_to_user_id_str": null,
     "contributors": null,
@@ -47,18 +39,13 @@
             {
               "expanded_url": "http://soundcloud.com/reality-technician",
               "url": "http://t.co/bKlJ80Do",
-              "indices": [
-                0,
-                20
-              ],
+              "indices": [0, 20],
               "display_url": "soundcloud.com/reality-techni…"
             }
           ]
         },
         "description": {
-          "urls": [
-
-          ]
+          "urls": []
         }
       },
       "favourites_count": 17094,

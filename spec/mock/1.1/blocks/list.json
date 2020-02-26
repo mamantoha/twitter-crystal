@@ -17,9 +17,10 @@
       "id_str": "509466276",
       "entities": {
         "description": {
-          "urls": [
-
-          ]
+          "urls": []
+        },
+        "url": {
+          "urls": []
         }
       },
       "contributors_enabled": false,

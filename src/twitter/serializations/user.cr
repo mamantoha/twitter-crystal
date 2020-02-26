@@ -46,6 +46,8 @@ module Twitter
 
     property description : String
 
+    property entities : UserEntities?
+
     def_equals id
   end
 end

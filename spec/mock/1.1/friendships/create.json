@@ -12,9 +12,10 @@
   "id_str": "1401881",
   "entities": {
     "description": {
-      "urls": [
-
-      ]
+      "urls": []
+    },
+    "url": {
+      "urls": []
     }
   },
   "default_profile": false,
@@ -48,9 +49,7 @@
     "favorited": false,
     "id_str": "239844310982459392",
     "entities": {
-      "urls": [
-
-      ],
+      "urls": [],
       "media": [
         {
           "media_url_https": "https://p.twimg.com/A1QZIU3CAAAnCkS.jpg",
@@ -81,20 +80,13 @@
           "url": "http://t.co/1uG4mhaB",
           "id": 239844310986653696,
           "type": "photo",
-          "indices": [
-            45,
-            65
-          ],
+          "indices": [45, 65],
           "media_url": "http://p.twimg.com/A1QZIU3CAAAnCkS.jpg",
           "display_url": "pic.twitter.com/1uG4mhaB"
         }
       ],
-      "hashtags": [
-
-      ],
-      "user_mentions": [
-
-      ]
+      "hashtags": [],
+      "user_mentions": []
     },
     "in_reply_to_user_id_str": null,
     "text": "Warm day by the Bay. Watching boats sail by. http://t.co/1uG4mhaB",

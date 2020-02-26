@@ -14,10 +14,7 @@
           "name": "TwitterDev",
           "id": 2244994945,
           "id_str": "2244994945",
-          "indices": [
-            3,
-            14
-          ]
+          "indices": [3, 14]
         }
       ],
       "urls": [
@@ -25,10 +22,7 @@
           "url": "https://t.co/XweGngmxlP",
           "expanded_url": "https://cards.twitter.com/cards/18ce53wgo4h/3xo1c",
           "display_url": "cards.twitter.com/cards/18ce53wg…",
-          "indices": [
-            94,
-            117
-          ]
+          "indices": [94, 117]
         }
       ]
     },
@@ -53,10 +47,7 @@
               "url": "http://t.co/78pYTvWfJd",
               "expanded_url": "https://dev.twitter.com",
               "display_url": "dev.twitter.com",
-              "indices": [
-                0,
-                22
-              ]
+              "indices": [0, 22]
             }
           ]
         },
@@ -118,10 +109,7 @@
             "url": "https://t.co/XweGngmxlP",
             "expanded_url": "https://cards.twitter.com/cards/18ce53wgo4h/3xo1c",
             "display_url": "cards.twitter.com/cards/18ce53wg…",
-            "indices": [
-              78,
-              101
-            ]
+            "indices": [78, 101]
           }
         ]
       },
@@ -146,10 +134,7 @@
                 "url": "https://t.co/66w26cua1O",
                 "expanded_url": "https://dev.twitter.com/",
                 "display_url": "dev.twitter.com",
-                "indices": [
-                  0,
-                  23
-                ]
+                "indices": [0, 23]
               }
             ]
           },
@@ -159,10 +144,7 @@
                 "url": "https://t.co/mGHnxZCxkt",
                 "expanded_url": "https://twittercommunity.com/",
                 "display_url": "twittercommunity.com",
-                "indices": [
-                  93,
-                  116
-                ]
+                "indices": [93, 116]
               }
             ]
           }
@@ -237,10 +219,7 @@
           "name": "Twitter Marketing",
           "id": 357750891,
           "id_str": "357750891",
-          "indices": [
-            3,
-            15
-          ]
+          "indices": [3, 15]
         }
       ],
       "urls": []
@@ -266,10 +245,7 @@
               "url": "http://t.co/78pYTvWfJd",
               "expanded_url": "https://dev.twitter.com",
               "display_url": "dev.twitter.com",
-              "indices": [
-                0,
-                22
-              ]
+              "indices": [0, 22]
             }
           ]
         },
@@ -331,10 +307,7 @@
             "url": "https://t.co/rpYndqWfQw",
             "expanded_url": "https://cards.twitter.com/cards/5wzucr/3x700",
             "display_url": "cards.twitter.com/cards/5wzucr/3…",
-            "indices": [
-              105,
-              128
-            ]
+            "indices": [105, 128]
           }
         ]
       },
@@ -359,10 +332,7 @@
                 "url": "https://t.co/Tfo4moo92y",
                 "expanded_url": "https://marketing.twitter.com",
                 "display_url": "marketing.twitter.com",
-                "indices": [
-                  0,
-                  23
-                ]
+                "indices": [0, 23]
               }
             ]
           },

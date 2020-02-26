@@ -6,44 +6,29 @@
     "created_at": "Mon Sep 03 13:24:14 +0000 2012",
     "id_str": "242613977966850048",
     "entities": {
-      "urls": [
-
-      ],
-      "hashtags": [
-
-      ],
-      "symbols":[
-
-      ],
+      "urls": [],
+      "hashtags": [],
+      "symbols": [],
       "user_mentions": [
         {
           "name": "Jason Costa",
           "id_str": "14927800",
           "id": 14927800,
-          "indices": [
-            0,
-            11
-          ],
+          "indices": [0, 11],
           "screen_name": "jasoncosta"
         },
         {
           "name": "Matt Harris",
           "id_str": "777925",
           "id": 777925,
-          "indices": [
-            12,
-            26
-          ],
+          "indices": [12, 26],
           "screen_name": "themattharris"
         },
         {
           "name": "ThinkWall",
           "id_str": "117426578",
           "id": 117426578,
-          "indices": [
-            109,
-            119
-          ],
+          "indices": [109, 119],
           "screen_name": "thinkwall"
         }
       ]
@@ -76,17 +61,12 @@
             {
               "expanded_url": null,
               "url": "http://www.linkedin.com/in/spode",
-              "indices": [
-                0,
-                32
-              ]
+              "indices": [0, 32]
             }
           ]
         },
         "description": {
-          "urls": [
-
-          ]
+          "urls": []
         }
       },
       "default_profile": false,
@@ -123,10 +103,7 @@
   },
   {
     "coordinates": {
-      "coordinates": [
-        121.0132101,
-        14.5191613
-      ],
+      "coordinates": [121.0132101, 14.5191613],
       "type": "Point"
     },
     "favorited": false,
@@ -134,30 +111,20 @@
     "created_at": "Mon Sep 03 08:08:02 +0000 2012",
     "id_str": "242534402280783873",
     "entities": {
-      "urls": [
-
-      ],
+      "urls": [],
       "hashtags": [
         {
           "text": "twitter",
-          "indices": [
-            49,
-            57
-          ]
+          "indices": [49, 57]
         }
       ],
-      "symbols":[
-
-      ],
+      "symbols": [],
       "user_mentions": [
         {
           "name": "Jason Costa",
           "id_str": "14927800",
           "id": 14927800,
-          "indices": [
-            14,
-            25
-          ],
+          "indices": [14, 25],
           "screen_name": "jasoncosta"
         }
       ]
@@ -169,10 +136,7 @@
     "in_reply_to_status_id_str": null,
     "id": 242534402280783873,
     "geo": {
-      "coordinates": [
-        14.5191613,
-        121.0132101
-      ],
+      "coordinates": [14.5191613, 121.0132101],
       "type": "Point"
     },
     "retweeted": false,
@@ -196,17 +160,12 @@
             {
               "expanded_url": null,
               "url": "http://about.me/michaelangelo",
-              "indices": [
-                0,
-                29
-              ]
+              "indices": [0, 29]
             }
           ]
         },
         "description": {
-          "urls": [
-
-          ]
+          "urls": []
         }
       },
       "default_profile": false,

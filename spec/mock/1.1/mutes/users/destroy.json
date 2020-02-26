@@ -8,9 +8,10 @@
   "url": null,
   "entities": {
     "description": {
-      "urls": [
-
-      ]
+      "urls": []
+    },
+    "url": {
+      "urls": []
     }
   },
   "protected": false,
@@ -44,26 +45,17 @@
     "retweet_count": 0,
     "favorite_count": 0,
     "entities": {
-      "hashtags": [
-
-      ],
-      "symbols": [
-
-      ],
+      "hashtags": [],
+      "symbols": [],
       "urls": [
         {
           "url": "http://t.co/ZiH6VOqLB3",
           "expanded_url": "http://cards-demo.cfapps.io/owntracks.html",
           "display_url": "cards-demo.cfapps.io/owntracks.html",
-          "indices": [
-            26,
-            48
-          ]
+          "indices": [26, 48]
         }
       ],
-      "user_mentions": [
-
-      ]
+      "user_mentions": []
     },
     "favorited": false,
     "retweeted": false,

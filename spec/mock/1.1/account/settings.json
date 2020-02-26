@@ -1,23 +1,23 @@
 {
-    "sleep_time":{
-      "enabled":false
-    },
-    "time_zone":{
-      "name":"Pacific Time (US & Canada)",
-      "utc_offset":-28800,
-      "tzinfo_name":"America/Los_Angeles"
-    },
-    "protected":false,
-    "screen_name":"theSeanCook",
-    "always_use_https":true,
-    "use_cookie_personalization":true,
-    "geo_enabled":true,
-    "language":"uk",
-    "discoverable_by_email":false,
-    "discoverable_by_mobile_phone":false,
-    "display_sensitive_media":true,
-    "allow_contributor_request":"all",
-    "allow_dms_from":"following",
-    "allow_dm_groups_from":"following",
-    "translator_type":"none"
-  }
+  "sleep_time": {
+    "enabled": false
+  },
+  "time_zone": {
+    "name": "Pacific Time (US & Canada)",
+    "utc_offset": -28800,
+    "tzinfo_name": "America/Los_Angeles"
+  },
+  "protected": false,
+  "screen_name": "theSeanCook",
+  "always_use_https": true,
+  "use_cookie_personalization": true,
+  "geo_enabled": true,
+  "language": "uk",
+  "discoverable_by_email": false,
+  "discoverable_by_mobile_phone": false,
+  "display_sensitive_media": true,
+  "allow_contributor_request": "all",
+  "allow_dms_from": "following",
+  "allow_dm_groups_from": "following",
+  "translator_type": "none"
+}

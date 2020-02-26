@@ -7,18 +7,10 @@
     "id_str": "240558470661799936",
     "in_reply_to_user_id_str": null,
     "entities": {
-      "urls": [
-
-      ],
-      "hashtags": [
-
-      ],
-      "symbols":[
-
-      ],
-      "user_mentions": [
-
-      ]
+      "urls": [],
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": []
     },
     "text": "just another test",
     "contributors": null,
@@ -48,10 +40,7 @@
             {
               "expanded_url": null,
               "url": "http://bit.ly/oauth-dancer",
-              "indices": [
-                0,
-                26
-              ],
+              "indices": [0, 26],
               "display_url": null
             }
           ]
@@ -91,10 +80,7 @@
   },
   {
     "coordinates": {
-      "coordinates": [
-        -122.25831,
-        37.871609
-      ],
+      "coordinates": [-122.25831, 37.871609],
       "type": "Point"
     },
     "truncated": false,
@@ -107,38 +93,25 @@
         {
           "expanded_url": "http://blogs.ischool.berkeley.edu/i290-abdt-s12/",
           "url": "http://t.co/bfj7zkDJ",
-          "indices": [
-            79,
-            99
-          ],
+          "indices": [79, 99],
           "display_url": "blogs.ischool.berkeley.edu/i290-abdt-s12/"
         }
       ],
-      "hashtags": [
-
-      ],
-      "symbols": [
-
-      ],
+      "hashtags": [],
+      "symbols": [],
       "user_mentions": [
         {
           "name": "Cal",
           "id_str": "17445752",
           "id": 17445752,
-          "indices": [
-            60,
-            64
-          ],
+          "indices": [60, 64],
           "screen_name": "Cal"
         },
         {
           "name": "Othman Laraki",
           "id_str": "20495814",
           "id": 20495814,
-          "indices": [
-            70,
-            77
-          ],
+          "indices": [70, 77],
           "screen_name": "othman"
         }
       ]
@@ -149,10 +122,7 @@
     "retweet_count": 3,
     "in_reply_to_status_id_str": null,
     "geo": {
-      "coordinates": [
-        37.871609,
-        -122.25831
-      ],
+      "coordinates": [37.871609, -122.25831],
       "type": "Point"
     },
     "retweeted": false,
@@ -162,29 +132,16 @@
       "name": "Berkeley",
       "country_code": "US",
       "country": "United States",
-      "attributes": {
-      },
+      "attributes": {},
       "url": "http://api.twitter.com/1/geo/id/5ef5b7f391e30aff.json",
       "id": "5ef5b7f391e30aff",
       "bounding_box": {
         "coordinates": [
           [
-            [
-              -122.367781,
-              37.835727
-            ],
-            [
-              -122.234185,
-              37.835727
-            ],
-            [
-              -122.234185,
-              37.905824
-            ],
-            [
-              -122.367781,
-              37.905824
-            ]
+            [-122.367781, 37.835727],
+            [-122.234185, 37.835727],
+            [-122.234185, 37.905824],
+            [-122.367781, 37.905824]
           ]
         ],
         "type": "Polygon"
@@ -211,18 +168,13 @@
             {
               "expanded_url": "http://about.me/raffi.krikorian",
               "url": "http://t.co/eNmnM6q",
-              "indices": [
-                0,
-                19
-              ],
+              "indices": [0, 19],
               "display_url": "about.me/raffi.krikorian"
             }
           ]
         },
         "description": {
-          "urls": [
-
-          ]
+          "urls": []
         }
       },
       "default_profile": true,
@@ -264,18 +216,10 @@
     "id_str": "240539141056638977",
     "in_reply_to_user_id_str": null,
     "entities": {
-      "urls": [
-
-      ],
-      "hashtags": [
-
-      ],
-      "symbols":[
-
-      ],
-      "user_mentions": [
-
-      ]
+      "urls": [],
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": []
     },
     "text": "You'd be right more often if you thought you were wrong.",
     "contributors": null,
@@ -305,18 +249,13 @@
             {
               "expanded_url": "http://www.rebelmouse.com/episod/",
               "url": "http://t.co/Lxw7upbN",
-              "indices": [
-                0,
-                20
-              ],
+              "indices": [0, 20],
               "display_url": "rebelmouse.com/episod/"
             }
           ]
         },
         "description": {
-          "urls": [
-
-          ]
+          "urls": []
         }
       },
       "default_profile": false,
