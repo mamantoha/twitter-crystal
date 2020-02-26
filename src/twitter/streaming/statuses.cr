@@ -1,5 +1,5 @@
-require "../delete"
-require "../tweet"
+require "../serializations/delete"
+require "../serializations/tweet"
 
 module Twitter
   module Streaming

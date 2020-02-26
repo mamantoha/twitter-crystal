@@ -1,4 +1,4 @@
-require "../cursor"
+require "../serializations/cursor"
 
 module Twitter
   module REST
