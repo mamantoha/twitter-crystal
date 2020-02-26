@@ -1,5 +1,5 @@
 require "json"
-require "../user"
+require "../serializations/user"
 
 module Twitter
   module REST

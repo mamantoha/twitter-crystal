@@ -1,0 +1,50 @@
+[
+  {
+    "name": "andy piper (pipes)",
+    "screen_name": "andypiper",
+    "id": 786491,
+    "id_str": "786491",
+    "connections": [
+      "following"
+    ]
+  },
+  {
+    "name": "λ🥑. 🍞",
+    "screen_name": "binary_aaron",
+    "id": 165837734,
+    "id_str": "165837734",
+    "connections": [
+      "following",
+      "followed_by"
+    ]
+  },
+  {
+    "name": "Twitter Dev",
+    "screen_name": "TwitterDev",
+    "id": 2244994945,
+    "id_str": "2244994945",
+    "connections": [
+      "following"
+    ]
+  },
+  {
+    "name": "Emily Sheehan 🏕",
+    "screen_name": "happycamper",
+    "id": 63046977,
+    "id_str": "63046977",
+    "connections": [
+      "none"
+    ]
+  },
+  {
+    "name": "Harrison Test",
+    "screen_name": "Harris_0ff",
+    "id": 4337869213,
+    "id_str": "4337869213",
+    "connections": [
+      "following",
+      "following_requested",
+      "followed_by"
+    ]
+  }
+]

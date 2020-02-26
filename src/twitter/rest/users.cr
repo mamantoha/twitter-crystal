@@ -1,4 +1,4 @@
-require "../cursor"
+require "../serializations/cursor"
 
 module Twitter
   module REST
@@ -40,6 +40,16 @@ module Twitter
       def users(*screen_names : String, options = {} of String => String) : Array(Twitter::User)
         response = post("/1.1/users/lookup.json", options.merge({"screen_name" => screen_names.join(',')}))
         Array(Twitter::User).from_json(response)
+      end
+
+      def friendships(*user_ids : Int32 | Int64) : Array(Twitter::Relationship)
+        response = get("/1.1/friendships/lookup.json", {"screen_name" => user_ids.join(',')})
+        Array(Twitter::Relationship).from_json(response)
+      end
+
+      def friendships(*screen_names : String) : Array(Twitter::Relationship)
+        response = get("/1.1/friendships/lookup.json", {"screen_name" => screen_names.join(',')})
+        Array(Twitter::Relationship).from_json(response)
       end
 
       def blocked(options = {} of String => String) : Array(Twitter::User)
