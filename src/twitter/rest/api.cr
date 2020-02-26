@@ -5,6 +5,7 @@ require "./tweets"
 require "./search"
 require "./direct_messages"
 require "./geo"
+require "./favorites"
 
 module Twitter
   module REST
@@ -16,6 +17,7 @@ module Twitter
       include Twitter::REST::Search
       include Twitter::REST::DirectMessages
       include Twitter::REST::Geo
+      include Twitter::REST::Favorites
     end
   end
 end

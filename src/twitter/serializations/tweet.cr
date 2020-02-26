@@ -13,6 +13,8 @@ module Twitter
 
     property id : Int64
 
+    property id_str : String
+
     property in_reply_to_screen_name : String?
 
     property in_reply_to_status_id : Float64?
@@ -40,6 +42,12 @@ module Twitter
     property geo : Coordinates?
 
     property coordinates : Coordinates?
+
+    property is_quote_status : Bool?
+
+    property quoted_status : Tweet?
+
+    property retweeted_status : Tweet?
 
     def_equals id
   end
