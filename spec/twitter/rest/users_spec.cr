@@ -221,4 +221,24 @@ describe Twitter::REST::Users do
       user.name.should eq "Evil Piper"
     end
   end
+
+  describe "#friendships" do
+    context "with String" do
+      users = client.friendships("hello")
+      it "returns Array(Twitter::Relationship)" do
+        users.should be_a Array(Twitter::Relationship)
+        users[0].screen_name.should eq "andypiper"
+        users[0].connections.should eq ["following"]
+      end
+    end
+
+    context "with Int64" do
+      users = client.friendships(123451234512345123)
+      it "returns Array(Twitter::Relationship)" do
+        users.should be_a Array(Twitter::Relationship)
+        users[0].screen_name.should eq "andypiper"
+        users[0].connections.should eq ["following"]
+      end
+    end
+  end
 end

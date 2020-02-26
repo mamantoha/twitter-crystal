@@ -42,6 +42,16 @@ module Twitter
         Array(Twitter::User).from_json(response)
       end
 
+      def friendships(*user_ids : Int32 | Int64) : Array(Twitter::Relationship)
+        response = get("/1.1/friendships/lookup.json", {"screen_name" => user_ids.join(',')})
+        Array(Twitter::Relationship).from_json(response)
+      end
+
+      def friendships(*screen_names : String) : Array(Twitter::Relationship)
+        response = get("/1.1/friendships/lookup.json", {"screen_name" => screen_names.join(',')})
+        Array(Twitter::Relationship).from_json(response)
+      end
+
       def blocked(options = {} of String => String) : Array(Twitter::User)
         response = get("/1.1/blocks/list.json", options)
         Array(Twitter::User).from_json(JSON.parse(response)["users"].to_json)
