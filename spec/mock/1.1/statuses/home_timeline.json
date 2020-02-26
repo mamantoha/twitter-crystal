@@ -38,10 +38,10 @@
         "url": {
           "urls": [
             {
-              "expanded_url": null,
+              "expanded_url": "http://bit.ly/oauth-dancer",
+              "display_url": "http://bit.ly/oauth-dancer",
               "url": "http://bit.ly/oauth-dancer",
-              "indices": [0, 26],
-              "display_url": null
+              "indices": [0, 26]
             }
           ]
         },

@@ -47,8 +47,9 @@
           "url": {
             "urls": [
               {
-                "expanded_url": null,
+                "expanded_url": "",
                 "url": "",
+                "display_url": "",
                 "indices": [0, 0]
               }
             ]
@@ -136,8 +137,9 @@
           "url": {
             "urls": [
               {
-                "expanded_url": null,
+                "expanded_url": "http://bullcityrecords.com/wnng/",
                 "url": "http://bullcityrecords.com/wnng/",
+                "display_url": "http://bullcityrecords.com/wnng/",
                 "indices": [0, 32]
               }
             ]
@@ -225,7 +227,8 @@
           "url": {
             "urls": [
               {
-                "expanded_url": null,
+                "expanded_url": "",
+                "display_url": "",
                 "url": "",
                 "indices": [0, 0]
               }
@@ -314,7 +317,8 @@
           "url": {
             "urls": [
               {
-                "expanded_url": null,
+                "expanded_url": "http://www.omnitarian.me",
+                "display_url": "http://www.omnitarian.me",
                 "url": "http://www.omnitarian.me",
                 "indices": [0, 24]
               }

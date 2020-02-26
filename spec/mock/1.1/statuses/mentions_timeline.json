@@ -59,7 +59,8 @@
         "url": {
           "urls": [
             {
-              "expanded_url": null,
+              "expanded_url": "http://www.linkedin.com/in/spode",
+              "display_url": "http://www.linkedin.com/in/spode",
               "url": "http://www.linkedin.com/in/spode",
               "indices": [0, 32]
             }
@@ -158,7 +159,8 @@
         "url": {
           "urls": [
             {
-              "expanded_url": null,
+              "expanded_url": "http://about.me/michaelangelo",
+              "display_url": "http://about.me/michaelangelo",
               "url": "http://about.me/michaelangelo",
               "indices": [0, 29]
             }
