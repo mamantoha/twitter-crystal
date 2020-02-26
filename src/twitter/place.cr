@@ -17,5 +17,7 @@ module Twitter
     property country_code : String
 
     property country : String
+
+    property bounding_box : BoundingBox?
   end
 end

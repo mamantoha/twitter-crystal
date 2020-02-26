@@ -37,6 +37,10 @@ module Twitter
 
     property place : Place?
 
+    property geo : Coordinates?
+
+    property coordinates : Coordinates?
+
     def_equals id
   end
 end

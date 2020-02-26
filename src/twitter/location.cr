@@ -1,13 +1,6 @@
 require "json"
 
 module Twitter
-  class BoundingBox
-    JSON.mapping({
-      coordinates: Array(Array(Array(Float64))),
-      type:        String,
-    })
-  end
-
   class Location
     JSON.mapping({
       id:               String,
