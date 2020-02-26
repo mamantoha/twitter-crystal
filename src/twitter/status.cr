@@ -4,7 +4,8 @@ module Twitter
   class Status
     include JSON::Serializable
 
-    property created_at : String
+    @[JSON::Field(converter: Time::Format.new("%a %b %d %T +0000 %Y"))]
+    property created_at : Time
 
     property favorite_count : Int32?
 
