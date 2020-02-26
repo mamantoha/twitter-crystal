@@ -1,7 +1,7 @@
 require "json"
 
 module Twitter
-  class Entities
+  class TweetEntities
     include JSON::Serializable
 
     property hashtags : Array(HashtagEntity?)

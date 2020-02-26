@@ -49,7 +49,7 @@ module Twitter
 
     property retweeted_status : Tweet?
 
-    property entities : Entities
+    property entities : TweetEntities
 
     def_equals id
   end
