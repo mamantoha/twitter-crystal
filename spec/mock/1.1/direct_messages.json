@@ -2,9 +2,12 @@
 {
     "created_at": "Mon Aug 27 17:21:03 +0000 2012",
     "entities": {
-        "hashtags": [],
-        "urls": [],
-        "user_mentions": []
+        "hashtags":[],
+        "symbols":[],
+        "urls":[],
+        "user_mentions":[],
+        "media":[],
+        "polls":[]
     },
     "id": 240136858829479936,
     "id_str": "240136858829479936",

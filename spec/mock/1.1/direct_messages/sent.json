@@ -3,6 +3,7 @@
         "created_at": "Tue Aug 28 00:40:56 +0000 2012",
         "entities": {
             "hashtags": [],
+            "symbols":[],
             "urls": [],
             "user_mentions": []
         },

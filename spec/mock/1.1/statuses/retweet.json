@@ -21,6 +21,9 @@
             "id": 7588892
         }],
         "hashtags": [],
+        "symbols":[
+
+        ],
         "urls": []
     },
     "user": {
@@ -95,6 +98,7 @@
         "entities": {
             "user_mentions": [],
             "hashtags": [],
+            "symbols":[],
             "urls": []
         },
         "user": {
