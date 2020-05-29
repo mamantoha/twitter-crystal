@@ -1,11 +1,19 @@
 language: crystal
 dist: xenial
 
+crystal:
+  - latest
+  - nightly
+
 script:
   - crystal spec
   - crystal tool format --check
   - bin/ameba
   - crystal docs
+
+jobs:
+  allow_failures:
+  - crystal: nightly
 
 deploy:
   provider: pages
