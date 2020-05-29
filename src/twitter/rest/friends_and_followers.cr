@@ -1,4 +1,3 @@
-require "json"
 require "../serializations/user"
 
 module Twitter

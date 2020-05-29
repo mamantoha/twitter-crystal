@@ -1,5 +1,3 @@
-require "json"
-
 module Twitter
   struct Error
     include JSON::Serializable

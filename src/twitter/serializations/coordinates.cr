@@ -1,5 +1,3 @@
-require "json"
-
 module Twitter
   class Coordinates
     include JSON::Serializable

@@ -1,5 +1,3 @@
-require "json"
-
 module Twitter
   class PollOption
     include JSON::Serializable

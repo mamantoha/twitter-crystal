@@ -1,8 +1,3 @@
-require "http/client"
-require "json"
-require "oauth"
-require "uri"
-
 module Twitter
   module REST
     class Client

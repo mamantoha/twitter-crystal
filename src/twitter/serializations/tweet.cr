@@ -1,5 +1,3 @@
-require "json"
-
 module Twitter
   class Tweet
     include JSON::Serializable

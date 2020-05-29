@@ -1,5 +1,3 @@
-require "json"
-
 module Twitter
   class UserMentionEntity
     include JSON::Serializable
