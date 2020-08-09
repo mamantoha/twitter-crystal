@@ -2,7 +2,7 @@
 # twitter-crystal
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8f698870aeeb4e5a9cb53549725ae653)](https://app.codacy.com/app/mamantoha/twitter-crystal?utm_source=github.com&utm_medium=referral&utm_content=mamantoha/twitter-crystal&utm_campaign=Badge_Grade_Dashboard)
-[![Build Status](https://travis-ci.org/mamantoha/twitter-crystal.svg?branch=master)](https://travis-ci.org/mamantoha/twitter-crystal)
+![Crystal CI](https://github.com/mamantoha/twitter-crystal/workflows/Crystal%20CI/badge.svg?branch=master)
 [![GitHub release](https://img.shields.io/github/release/mamantoha/twitter-crystal.svg)](https://github.com/mamantoha/twitter-crystal/releases)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://mamantoha.github.io/twitter-crystal/)
 [![License](https://img.shields.io/github/license/mamantoha/twitter-crystal.svg)](https://github.com/mamantoha/twitter-crystal/blob/master/LICENSE.md)
