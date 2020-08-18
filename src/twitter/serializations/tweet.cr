@@ -17,7 +17,7 @@ module Twitter
 
     property in_reply_to_status_id : Float64?
 
-    property in_reply_to_user_id : Int32?
+    property in_reply_to_user_id : Int64?
 
     property lang : String?
 
