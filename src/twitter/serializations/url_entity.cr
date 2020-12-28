@@ -4,9 +4,9 @@ module Twitter
 
     property url : String
 
-    property expanded_url : String
+    property expanded_url : String?
 
-    property display_url : String
+    property display_url : String?
 
     property indices : Array(Int32)
   end
