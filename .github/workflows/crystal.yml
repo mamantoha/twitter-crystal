@@ -14,9 +14,9 @@ jobs:
     container:
       image: crystallang/crystal
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install dependencies
-        run: shards install --ignore-crystal-version
+        run: shards install
       - name: Check format
         run: crystal tool format --check
   check_ameba:
@@ -24,9 +24,9 @@ jobs:
     container:
       image: crystallang/crystal
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install dependencies
-        run: shards install --ignore-crystal-version
+        run: shards install
       - name: Check ameba
         run: ./bin/ameba
   test_latest:
@@ -34,9 +34,9 @@ jobs:
     container:
       image: crystallang/crystal
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install dependencies
-        run: shards install --ignore-crystal-version
+        run: shards install
       - name: Run tests
         run: crystal spec
   test_nightly:
@@ -44,8 +44,8 @@ jobs:
     container:
       image: crystallang/crystal:nightly
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install dependencies
-        run: shards install --ignore-crystal-version
+        run: shards install
       - name: Run tests
         run: crystal spec
