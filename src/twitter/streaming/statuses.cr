@@ -4,7 +4,7 @@ require "../serializations/tweet"
 module Twitter
   module Streaming
     module Statuses
-      def filter(options = {} of String => String)
+      def filter(options = {} of String => String, &)
         delimeted_length = options.fetch("delimited", false)
 
         post("/1.1/statuses/filter.json", options) do |response|
@@ -21,7 +21,7 @@ module Twitter
         end
       end
 
-      def sample(options = {} of String => String, &block)
+      def sample(options = {} of String => String, &)
         delimeted_length = options.fetch("delimited", false)
 
         get("/1.1/statuses/sample.json", options) do |response|
