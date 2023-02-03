@@ -7,7 +7,7 @@ module Twitter
 
     property favorite_count : Int32?
 
-    property favorited : Bool
+    property? favorited : Bool
 
     property id : Float64
 
@@ -21,12 +21,12 @@ module Twitter
 
     property retweet_count : Int32
 
-    property retweeted : Bool
+    property? retweeted : Bool
 
     property source : String
 
     property text : String
 
-    property truncated : Bool
+    property? truncated : Bool
   end
 end

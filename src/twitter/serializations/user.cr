@@ -5,9 +5,9 @@ module Twitter
     @[JSON::Field(converter: Time::Format.new("%a %b %d %T +0000 %Y"))]
     property created_at : Time
 
-    property default_profile : Bool
+    property? default_profile : Bool
 
-    property default_profile_image : Bool
+    property? default_profile_image : Bool
 
     property favourites_count : Int32
 
@@ -30,7 +30,7 @@ module Twitter
     property profile_image_url_https : String
 
     @[JSON::Field(key: "protected")]
-    property user_protected : Bool
+    property? user_protected : Bool
 
     property screen_name : String
 
@@ -40,7 +40,7 @@ module Twitter
 
     property suspended : Bool?
 
-    property verified : Bool
+    property? verified : Bool
 
     property description : String
 

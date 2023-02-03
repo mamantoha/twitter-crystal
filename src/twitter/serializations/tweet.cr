@@ -23,7 +23,7 @@ module Twitter
 
     property retweet_count : Int32
 
-    property retweeted : Bool
+    property? retweeted : Bool
 
     property possibly_sensitive : Bool?
 
@@ -31,7 +31,7 @@ module Twitter
 
     property text : String
 
-    property truncated : Bool
+    property? truncated : Bool
 
     property user : User
 
