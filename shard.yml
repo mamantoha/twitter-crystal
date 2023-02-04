@@ -1,11 +1,11 @@
 name: twitter-crystal
-version: 0.5.3
+version: 0.5.4
 
 authors:
   - Erik Michaels-Ober <sferik@gmail.com>
   - Anton Maminov <anton.maminov@gmail.com>
 
-crystal: ">= 0.35.1"
+crystal: ">= 1.0.0"
 
 development_dependencies:
   ameba:
