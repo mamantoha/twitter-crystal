@@ -7,23 +7,23 @@ module Twitter
     property time_zone : TimeZone
 
     @[JSON::Field(key: "protected")]
-    property settings_protected : Bool
+    property? settings_protected : Bool
 
     property screen_name : String
 
-    property always_use_https : Bool
+    property? always_use_https : Bool
 
-    property use_cookie_personalization : Bool
+    property? use_cookie_personalization : Bool
 
-    property geo_enabled : Bool
+    property? geo_enabled : Bool
 
     property language : String
 
-    property discoverable_by_email : Bool
+    property? discoverable_by_email : Bool
 
-    property discoverable_by_mobile_phone : Bool
+    property? discoverable_by_mobile_phone : Bool
 
-    property display_sensitive_media : Bool
+    property? display_sensitive_media : Bool
 
     property allow_contributor_request : String
 
@@ -37,7 +37,7 @@ module Twitter
   class SleepTime
     include JSON::Serializable
 
-    property enabled : Bool
+    property? enabled : Bool
   end
 
   class TimeZone

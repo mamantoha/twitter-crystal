@@ -21,14 +21,14 @@ module Twitter
         consumer.authenticate(http_client, access_token)
       end
 
-      def get(path : String, params = {} of String => String, &block)
+      def get(path : String, params = {} of String => String, &)
         path += "?#{to_query_string(params)}" unless params.empty?
         http_client.get(path) do |response|
           yield handle_response(response)
         end
       end
 
-      def post(path : String, form = {} of String => String, &block)
+      def post(path : String, form = {} of String => String, &)
         http_client.post(path, form: form) do |response|
           yield handle_response(response)
         end
