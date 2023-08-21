@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.8.2">
+<meta name="crystal_docs.project_version" content="0.5.4">
+<meta name="crystal_docs.project_name" content="twitter-crystal">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="twitter-crystal">
+  <title>Twitter::REST::FriendsAndFollowers - twitter-crystal 0.5.4</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          twitter-crystal
+        </a>
+      </h1>
+
+      <span class="project-version">
+        0.5.4
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="twitter-crystal/Twitter" data-name="twitter">
+      <a href="../../Twitter.html">Twitter</a>
+      
+        <ul>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/BoundingBox" data-name="twitter::boundingbox">
+      <a href="../../Twitter/BoundingBox.html">BoundingBox</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Coordinates" data-name="twitter::coordinates">
+      <a href="../../Twitter/Coordinates.html">Coordinates</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Cursor" data-name="twitter::cursor">
+      <a href="../../Twitter/Cursor.html">Cursor</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Delete" data-name="twitter::delete">
+      <a href="../../Twitter/Delete.html">Delete</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/DirectMessage" data-name="twitter::directmessage">
+      <a href="../../Twitter/DirectMessage.html">DirectMessage</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Error" data-name="twitter::error">
+      <a href="../../Twitter/Error.html">Error</a>
+      
+    </li>
+  
+  <li class="parent " data-id="twitter-crystal/Twitter/Errors" data-name="twitter::errors">
+      <a href="../../Twitter/Errors.html">Errors</a>
+      
+        <ul>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Errors/ClientError" data-name="twitter::errors::clienterror">
+      <a href="../../Twitter/Errors/ClientError.html">ClientError</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Errors/ServerError" data-name="twitter::errors::servererror">
+      <a href="../../Twitter/Errors/ServerError.html">ServerError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/HashtagEntity" data-name="twitter::hashtagentity">
+      <a href="../../Twitter/HashtagEntity.html">HashtagEntity</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Location" data-name="twitter::location">
+      <a href="../../Twitter/Location.html">Location</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Place" data-name="twitter::place">
+      <a href="../../Twitter/Place.html">Place</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/PollEntity" data-name="twitter::pollentity">
+      <a href="../../Twitter/PollEntity.html">PollEntity</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/PollOption" data-name="twitter::polloption">
+      <a href="../../Twitter/PollOption.html">PollOption</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Relationship" data-name="twitter::relationship">
+      <a href="../../Twitter/Relationship.html">Relationship</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="twitter-crystal/Twitter/REST" data-name="twitter::rest">
+      <a href="../../Twitter/REST.html">REST</a>
+      
+        <ul>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/API" data-name="twitter::rest::api">
+      <a href="../../Twitter/REST/API.html">API</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Client" data-name="twitter::rest::client">
+      <a href="../../Twitter/REST/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/DirectMessages" data-name="twitter::rest::directmessages">
+      <a href="../../Twitter/REST/DirectMessages.html">DirectMessages</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Favorites" data-name="twitter::rest::favorites">
+      <a href="../../Twitter/REST/Favorites.html">Favorites</a>
+      
+    </li>
+  
+  <li class=" current" data-id="twitter-crystal/Twitter/REST/FriendsAndFollowers" data-name="twitter::rest::friendsandfollowers">
+      <a href="../../Twitter/REST/FriendsAndFollowers.html">FriendsAndFollowers</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Geo" data-name="twitter::rest::geo">
+      <a href="../../Twitter/REST/Geo.html">Geo</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Search" data-name="twitter::rest::search">
+      <a href="../../Twitter/REST/Search.html">Search</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Timelines" data-name="twitter::rest::timelines">
+      <a href="../../Twitter/REST/Timelines.html">Timelines</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Tweets" data-name="twitter::rest::tweets">
+      <a href="../../Twitter/REST/Tweets.html">Tweets</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/REST/Users" data-name="twitter::rest::users">
+      <a href="../../Twitter/REST/Users.html">Users</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Settings" data-name="twitter::settings">
+      <a href="../../Twitter/Settings.html">Settings</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/SleepTime" data-name="twitter::sleeptime">
+      <a href="../../Twitter/SleepTime.html">SleepTime</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Status" data-name="twitter::status">
+      <a href="../../Twitter/Status.html">Status</a>
+      
+    </li>
+  
+  <li class="parent " data-id="twitter-crystal/Twitter/Streaming" data-name="twitter::streaming">
+      <a href="../../Twitter/Streaming.html">Streaming</a>
+      
+        <ul>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Streaming/API" data-name="twitter::streaming::api">
+      <a href="../../Twitter/Streaming/API.html">API</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Streaming/Client" data-name="twitter::streaming::client">
+      <a href="../../Twitter/Streaming/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Streaming/Statuses" data-name="twitter::streaming::statuses">
+      <a href="../../Twitter/Streaming/Statuses.html">Statuses</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/SymbolEntity" data-name="twitter::symbolentity">
+      <a href="../../Twitter/SymbolEntity.html">SymbolEntity</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/TimeZone" data-name="twitter::timezone">
+      <a href="../../Twitter/TimeZone.html">TimeZone</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/Tweet" data-name="twitter::tweet">
+      <a href="../../Twitter/Tweet.html">Tweet</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/TweetEntities" data-name="twitter::tweetentities">
+      <a href="../../Twitter/TweetEntities.html">TweetEntities</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/UrlEntity" data-name="twitter::urlentity">
+      <a href="../../Twitter/UrlEntity.html">UrlEntity</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/User" data-name="twitter::user">
+      <a href="../../Twitter/User.html">User</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/UserDescriptionEntity" data-name="twitter::userdescriptionentity">
+      <a href="../../Twitter/UserDescriptionEntity.html">UserDescriptionEntity</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/UserEntities" data-name="twitter::userentities">
+      <a href="../../Twitter/UserEntities.html">UserEntities</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/UserMentionEntity" data-name="twitter::usermentionentity">
+      <a href="../../Twitter/UserMentionEntity.html">UserMentionEntity</a>
+      
+    </li>
+  
+  <li class=" " data-id="twitter-crystal/Twitter/UserUrlEntity" data-name="twitter::userurlentity">
+      <a href="../../Twitter/UserUrlEntity.html">UserUrlEntity</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Twitter::REST::FriendsAndFollowers
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="direct-including-types" class="anchor" href="#direct-including-types">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Direct including types
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="../../Twitter/REST/API.html">Twitter::REST::API</a></li>
+    
+  </ul>
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      twitter/rest/friends_and_followers.cr
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#follow%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method" class="signature"><strong>#follow</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Twitter::User</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#follow%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method" class="signature"><strong>#follow</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Twitter::User</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#follow%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method" class="signature"><strong>#follow</strong>(user : Twitter::User, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Twitter::User</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#follower_ids%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#follower_ids</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#follower_ids%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#follower_ids</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#follower_ids%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#follower_ids</strong>(user : Twitter::User, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#follower_ids%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#follower_ids</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#followers%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#followers</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#followers%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#followers</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#followers%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#followers</strong>(user : Twitter::User, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#followers%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#followers</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friend_ids%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#friend_ids</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friend_ids%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#friend_ids</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friend_ids%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#friend_ids</strong>(user : Twitter::User, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friend_ids%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method" class="signature"><strong>#friend_ids</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friends%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#friends</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friends%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#friends</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friends%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#friends</strong>(user : Twitter::User, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friends%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method" class="signature"><strong>#friends</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Twitter::User)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unfollow%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method" class="signature"><strong>#unfollow</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Twitter::User</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unfollow%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method" class="signature"><strong>#unfollow</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Twitter::User</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unfollow%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method" class="signature"><strong>#unfollow</strong>(user : Twitter::User, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Twitter::User</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="follow(user_id:Int32|Int64,options={}ofString=&gt;String):Twitter::User-instance-method">
+      <div class="signature">
+        
+        def <strong>follow</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : <a href="../../Twitter/User.html">Twitter::User</a>
+
+        <a class="method-permalink" href="#follow%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="follow(screen_name:String,options={}ofString=&gt;String):Twitter::User-instance-method">
+      <div class="signature">
+        
+        def <strong>follow</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : <a href="../../Twitter/User.html">Twitter::User</a>
+
+        <a class="method-permalink" href="#follow%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="follow(user:Twitter::User,options={}ofString=&gt;String):Twitter::User-instance-method">
+      <div class="signature">
+        
+        def <strong>follow</strong>(user : <a href="../../Twitter/User.html">Twitter::User</a>, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : <a href="../../Twitter/User.html">Twitter::User</a>
+
+        <a class="method-permalink" href="#follow%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="follower_ids(screen_name:String,options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>follower_ids</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#follower_ids%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="follower_ids(user_id:Int32|Int64,options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>follower_ids</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#follower_ids%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="follower_ids(user:Twitter::User,options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>follower_ids</strong>(user : <a href="../../Twitter/User.html">Twitter::User</a>, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#follower_ids%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="follower_ids(options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>follower_ids</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#follower_ids%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="followers(screen_name:String,options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>followers</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#followers%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="followers(user_id:Int32|Int64,options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>followers</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#followers%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="followers(user:Twitter::User,options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>followers</strong>(user : <a href="../../Twitter/User.html">Twitter::User</a>, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#followers%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="followers(options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>followers</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#followers%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friend_ids(screen_name:String,options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>friend_ids</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#friend_ids%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friend_ids(user_id:Int32|Int64,options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>friend_ids</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#friend_ids%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friend_ids(user:Twitter::User,options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>friend_ids</strong>(user : <a href="../../Twitter/User.html">Twitter::User</a>, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#friend_ids%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friend_ids(options={}ofString=&gt;String):Array(Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>friend_ids</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(Int64)
+
+        <a class="method-permalink" href="#friend_ids%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Int64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friends(screen_name:String,options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>friends</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#friends%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friends(user_id:Int32|Int64,options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>friends</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#friends%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friends(user:Twitter::User,options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>friends</strong>(user : <a href="../../Twitter/User.html">Twitter::User</a>, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#friends%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friends(options={}ofString=&gt;String):Array(Twitter::User)-instance-method">
+      <div class="signature">
+        
+        def <strong>friends</strong>(options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : Array(<a href="../../Twitter/User.html">Twitter::User</a>)
+
+        <a class="method-permalink" href="#friends%28options%3D%7B%7DofString%3D%3EString%29%3AArray%28Twitter%3A%3AUser%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unfollow(user_id:Int32|Int64,options={}ofString=&gt;String):Twitter::User-instance-method">
+      <div class="signature">
+        
+        def <strong>unfollow</strong>(user_id : Int32 | Int64, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : <a href="../../Twitter/User.html">Twitter::User</a>
+
+        <a class="method-permalink" href="#unfollow%28user_id%3AInt32%7CInt64%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unfollow(screen_name:String,options={}ofString=&gt;String):Twitter::User-instance-method">
+      <div class="signature">
+        
+        def <strong>unfollow</strong>(screen_name : String, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : <a href="../../Twitter/User.html">Twitter::User</a>
+
+        <a class="method-permalink" href="#unfollow%28screen_name%3AString%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unfollow(user:Twitter::User,options={}ofString=&gt;String):Twitter::User-instance-method">
+      <div class="signature">
+        
+        def <strong>unfollow</strong>(user : <a href="../../Twitter/User.html">Twitter::User</a>, options = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>) : <a href="../../Twitter/User.html">Twitter::User</a>
+
+        <a class="method-permalink" href="#unfollow%28user%3ATwitter%3A%3AUser%2Coptions%3D%7B%7DofString%3D%3EString%29%3ATwitter%3A%3AUser-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
